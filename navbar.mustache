@@ -1,0 +1,581 @@
+<style>
+div.usermenu a[data-title^="profile"],
+div.usermenu a[data-title^="mymoodle"],
+#nav-drawer a[data-key="myhome"], 
+div.usermenu .dropdown-divider
+{
+	display: none;
+	border:none;
+}
+.avatars .userpicture {
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-o-border-radius: 50%;
+	-ms-border-radius: 50%;
+}
+.login {
+	opacity: 0!important;
+}
+.login a{
+ 	display:none!important;
+}
+.navbar-fhs {
+	background:#6e9de3;
+        padding-top: 5px;
+        padding-bottom: 5px;
+}
+.navbar-brand, .navbar-brand .site-name {
+	display: inline-block!important;
+}
+
+.navbar-brand .site-name {
+	color: #fff;
+    	font-weight: 600;
+}
+.site-second-name {
+	color: white;
+}
+.usertext {
+	color:white;	
+}
+.dropdown-toggle::after {
+	color:white;                                                                                          
+}
+#last {
+    color:#fff;
+    text-align:center;
+    padding-bottom:5px;
+    font-size:22px;
+    font-weight:600;
+    font-style:italic;
+    letter-spacing:1px;
+    word-spacing:-2px;
+}
+@media only screen and (max-width:870px) {
+	.col-xs-4 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.col-xs-2 {
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+}
+@media only screen and (max-width:766px) {
+	.col-xs-4 {
+    flex: 0 0 40%;
+    max-width: 40%;
+}
+.col-xs-2 {
+    flex: 0 0 30%;
+    max-width: 30%;
+}
+}
+@media only screen and (min-width:767px) and (max-width:862px) {
+
+}
+@media only screen and (min-width:600px) and (max-width:766px) {
+
+nav {
+    
+    padding-left: 4px!important;
+}
+.nav-setting .coursecontrols {
+    
+}
+}
+
+@media only screen and (min-width:582px) and (max-width:599px) {
+
+nav {
+    padding-left: 0px!important;
+}
+.nav-setting .coursecontrols {
+    
+}
+}
+@media only screen and (min-width:567px) and (max-width:581px) {
+
+#left {
+    padding-left: 1px!important;
+}
+}
+
+@media only screen and (min-width:510px) and (max-width:566px) {
+
+nav {
+    padding-left: 1px!important;
+}
+#left {
+    flex: 0 0 40%;
+    max-width: 40%;
+}
+#middle, #right {
+    flex: 0 0 30%;
+    max-width: 30%;
+}
+#middle .site-name {
+    position: relative;
+    left: -25px;
+}
+}
+@media only screen and (min-width:494px) and (max-width:509px) {
+
+nav {
+    padding-left: 1px!important;
+}
+#left {
+    flex: 0 0 40%;
+    max-width: 40%;
+}
+#middle, #right {
+    flex: 0 0 30%;
+    max-width: 30%;
+}
+#middle .site-name {
+    position: relative;
+    left: -23px;
+}
+}
+@media only screen and (min-width:482px) and (max-width:493px) {
+
+nav {
+    padding-left: 1px!important;
+}
+#left {
+    flex: 0 0 40%;
+    max-width: 40%;
+}
+#middle, #right {
+    flex: 0 0 30%;
+    max-width: 30%;
+}
+#middle .site-name {
+    position: relative;
+    left: -21px;
+}
+}
+@media only screen and (min-width:474px) and (max-width:481px) {
+
+nav {
+    padding-left: 1px!important;
+}
+#left {
+    flex: 0 0 40%;
+    max-width: 40%;
+}
+#middle, #right {
+    flex: 0 0 30%;
+    max-width: 30%;
+}
+#middle .site-name {
+    position: relative;
+    left: -21px;
+}
+}
+@media only screen and (min-width:462px) and (max-width:473px) {
+
+nav {
+    padding-left: 1px!important;
+}
+#left {
+    flex: 0 0 40%;
+    max-width: 40%;
+}
+#middle, #right {
+    flex: 0 0 30%;
+    max-width: 30%;
+}
+#middle .site-name {
+    position: relative;
+    left: -22px;
+}
+}
+@media only screen and (min-width:456px) and (max-width:461px) {
+
+nav {
+    padding-left: 1px!important;
+}
+#left {
+    flex: 0 0 40%;
+    max-width: 40%;
+}
+#middle, #right {
+    flex: 0 0 30%;
+    max-width: 30%;
+}
+#middle .site-name {
+    position: relative;
+    left: -20px;
+}
+}
+@media only screen and (min-width:446px) and (max-width:455px) {
+
+nav {
+    padding-left: 1px!important;
+}
+#left {
+    flex: 0 0 40%;
+    max-width: 40%;
+}
+#middle, #right {
+    flex: 0 0 30%;
+    max-width: 30%;
+}
+#middle .site-name {
+    position: relative;
+    left: -20px;
+}
+}
+@media only screen and (min-width:426px) and (max-width:445px) {
+
+nav {
+    padding-left: 0px!important;
+}
+#left {
+    flex: 0 0 40%;
+    max-width: 40%;
+    padding-left: 2px!important;
+}
+#middle, #right {
+    flex: 0 0 30%;
+    max-width: 30%;
+}
+#middle .site-name {
+    position: relative;
+    left: -19px;
+}
+}
+@media only screen and (min-width:430px) {
+#nav-drawer {
+    -webkit-transform: translateY(38px)!important;
+    -moz-transform: translateY(38px)!important;
+    -o-transform: translateY(38px)!important;
+    -ms-transform: translateY(38px)!important;
+}
+}
+@media only screen and (min-width:406px) and (max-width:429px) {
+#nav-drawer {
+    -webkit-transform: translateY(71px)!important;
+    -moz-transform: translateY(71px)!important;
+    -o-transform: translateY(71px)!important;
+    -ms-transform: translateY(71px)!important;
+}
+}
+@media only screen and (min-width:422px) and (max-width:425px) {
+
+nav {
+    padding-left: 4px!important;
+}
+#left {
+    flex: 0 0 40%;
+    max-width: 40%;
+    padding-left: 2px!important;
+}
+#middle, #right {
+    flex: 0 0 30%;
+    max-width: 30%;
+}
+#middle .site-name {
+    position: relative;
+    left: -19px;
+}
+}
+@media only screen and (min-width:415px) and (max-width:421px) {
+
+nav {
+    padding-left: 4px!important;
+}
+#left {
+    flex: 0 0 40%;
+    max-width: 40%;
+    padding-left: 2px!important;
+}
+#middle, #right {
+    flex: 0 0 30%;
+    max-width: 30%;
+}
+#middle .site-name {
+    position: relative;
+    left: -19px;
+}
+}
+@media only screen and (min-width:405px) and (max-width:414px) {
+
+nav {
+    padding-left: 4px!important;
+}
+#left {
+    flex: 0 0 40%;
+    max-width: 40%;
+    padding-left: 2px!important;
+}
+#middle, #right {
+    flex: 0 0 30%;
+    max-width: 30%;
+}
+#middle .site-name {
+    position: relative;
+    left: -20px;
+}
+}
+@media only screen and (max-width:405px) {
+nav {
+    padding-left: 4px!important;
+}
+#left {
+    flex: 0 0 40%;
+    max-width: 40%;
+    padding: 0;
+    padding-left: 2px!important;
+}
+#middle, #right {
+    flex: 0 0 30%;
+    max-width: 30%;
+}
+#middle .site-name {
+    position: relative;
+    left: 0;
+}
+#nav-drawer {
+    -webkit-transform: translateY(71px)!important;
+    -moz-transform: translateY(713px)!important;
+    -o-transform: translateY(71px)!important;
+    -ms-transform: translateY(71px)!important;
+}
+}
+@media only screen and (min-width:395px) and (max-width:404px) {
+.navbar-fhs {
+    padding-bottom: 0;
+}
+#left {
+    flex: 0 0 40%;
+    max-width: 40%;
+    order: 3;
+}
+#last {
+    flex: 0 0 60%;
+    max-width: 60%;
+    order: 4;
+    font-size: 16px;
+    -webkit-transform: translateY(-6px);
+    -moz-transform: translateY(-6px);
+    -o-transform: translateY(-6px);
+    -ms-transform: translateY(-6px);
+}
+#middle, #right {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+#middle .site-name {
+    position: relative;
+    left: 0;
+}
+#nav-drawer {
+    -webkit-transform: translateY(48px)!important;
+    -moz-transform: translateY(48px)!important;
+    -o-transform: translateY(48px)!important;
+    -ms-transform: translateY(48px)!important;
+}
+.editingbutton {
+    height: 33px;
+}
+}
+@media only screen and (max-width:394px) {
+.nav-setting .drawer {
+    
+}
+#left {
+    flex: 0 0 100%;
+    max-width: 100%;
+    order: 3;
+}
+#last {
+    flex: 0 0 100%;
+    max-width: 100%;
+    order: 4;
+    font-size: 16px;
+}
+#middle, #right {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+#middle .site-name {
+    position: relative;
+    left: 0;
+}
+#nav-drawer {
+    -webkit-transform: translateY(69px)!important;
+    -moz-transform: translateY(69px)!important;
+    -o-transform: translateY(69px)!important;
+    -ms-transform: translateY(69px)!important;
+}
+}
+@media only screen and (max-width:350px) {
+    #nav-drawer {
+    -webkit-transform: translateY(93px)!important;
+    -moz-transform: translateY(93px)!important;
+    -o-transform: translateY(93px)!important;
+    -ms-transform: translateY(93px)!important;
+}
+}
+
+@media only screen and (min-width:334px) and (max-width:404px) {
+    #middle .site-name {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(50px);
+    -moz-transform: translateX(36px);
+    -o-transform: translateX(36px);
+    -ms-transform: translateX(36px);
+}
+}
+@media only screen and (min-width:280px) and (max-width:333px) {
+    #middle .site-name {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(35px);
+    -moz-transform: translateX(35px);
+    -o-transform: translateX(35px);
+    -ms-transform: translateX(35px);
+}
+}
+@media only screen and (min-width:226px) and (max-width:279px) {
+    #middle .site-name {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(24px);
+    -moz-transform: translateX(24px);
+    -o-transform: translateX(24px);
+    -ms-transform: translateX(24px);
+}
+}
+@media only screen and (min-width:208px) and (max-width:225px) {
+    #middle .site-name {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(22px);
+    -moz-transform: translateX(22px);
+    -o-transform: translateX(22px);
+    -ms-transform: translateX(22px);
+}
+}
+@media only screen and (min-width:100px) and (max-width:207px) {
+    #middle .site-name {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(18px);
+    -moz-transform: translateX(18px);
+    -o-transform: translateX(18px);
+    -ms-transform: translateX(18px);
+}
+}
+@media only screen and (min-width:395px) and (max-width:404px) {
+    #nav-drawer {
+    -webkit-transform: translateY(53px);
+    -moz-transform: translateY(53px);
+    -o-transform: translateY(53px);
+    -ms-transform: translateY(53px);
+}
+}
+@media only screen and (min-width:351px) and (max-width:394px) {
+    #nav-drawer {
+    -webkit-transform: translateY(63px);
+    -moz-transform: translateY(63px);
+    -o-transform: translateY(63px);
+    -ms-transform: translateY(63px);
+}
+}
+@media only screen and (max-width:350px) {
+    #nav-drawer {
+    -webkit-transform: translateY(87px);
+    -moz-transform: translateY(87px);
+    -o-transform: translateY(87px);
+    -ms-transform: translateY(87px);
+}
+}
+</style>
+{{!
+    This file is part of Moodle - http://moodle.org/
+
+    Moodle is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Moodle is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+}}
+{{!
+    Page navbar.
+}}
+<nav class="fixed-top navbar-fhs {{#output.show_teacher_navbarcolor}}navbar-teacher{{/output.show_teacher_navbarcolor}} {{#output.show_student_navbarcolor}}navbar-student{{/output.show_student_navbarcolor}} navbar-expand moodle-has-zindex" style="position:fixed!important;top:0;z-index:5;width:100%;box-shadow: 0 0 20px -5px rgba(86, 111, 221,.9);">
+
+<div class="row w-100">
+<div id="left" class="nav-setting col-md-4 col-sm-4 col-xs-2" style="display:flex;justify-content:start;height:inherit;height:40px;">
+<div class="row">
+    {{#hasfhsdrawer}}
+        <div data-region="drawer-toggle" class="d-inline-block drawer">
+            <button aria-expanded="{{#navdraweropen}}true{{/navdraweropen}}{{^navdraweropen}}false{{/navdraweropen}}" aria-controls="nav-drawer" type="button" class="btn nav-link float-sm-left mr-1 btn-secondary" data-action="toggle-drawer" data-side="left" data-preference="drawer-open-nav">{{#pix}}i/menubars{{/pix}}<span class="sr-only">{{#str}}sidepanel, core{{/str}}</span></button>
+        </div>
+    {{/hasfhsdrawer}}
+
+	<div class="coursecontrols nav-item d-flex">
+            {{{ output.teacherdashmenu }}}
+            {{{ output.edit_button_fhs }}}
+        </div>
+</div>
+</div>
+
+
+<div id="middle" class="col-md-4 col-sm-4 col-xs-4" style="display:flex;justify-content:center;height:inherit;height:40px;">
+        <a href="{{{ config.wwwroot }}}" class="navbar-brand {{# output.should_display_navbar_logo }}has-logo{{/ output.should_display_navbar_logo }}
+            {{^ output.should_display_navbar_logo }}
+                d-none d-sm-inline
+            {{/ output.should_display_navbar_logo }}
+                ">
+            {{# output.should_display_navbar_logo }}
+                <span class="logo d-none d-sm-inline">
+                    <img src="{{output.get_compact_logo_url}}" alt="{{sitename}}">
+                </span>
+            {{/ output.should_display_navbar_logo }}
+            <span class="site-name d-none d-md-inline">{{{ sitename }}}</span>
+        </a>
+</div>
+        
+        <!-- course_controls -->
+
+<div id="right" class="col-md-4 col-sm-4 col-xs-2" style="display:flex;justify-content:end;height:inherit;height:40px;">
+        <ul class="navbar-nav d-none d-md-flex">
+            <!-- custom_menu -->
+            {{{ output.fordson_custom_menu }}}
+            {{{ output.custom_menu }}}
+            <!-- page_heading_menu -->
+            {{{ output.page_heading_menu }}}
+        </ul>
+        <ul class="nav navbar-nav ml-auto">
+            <div class="d-none d-lg-block">
+            {{{ output.search_box }}}
+        </div>
+            <!-- navbar_plugin_output -->
+            <li class="nav-item">
+            {{{ output.navbar_plugin_output }}}
+            </li>
+            <!-- user_menu -->
+            <li class="nav-item d-flex align-items-center">
+                {{{ output.user_menu }}}
+            </li>
+        </ul>
+</div>
+        <!-- search_box -->
+
+<div id="last" class="col-md-12">
+	နည်းပညာ၊ သက်မွေးပညာနှင့် လေ့ကျင့်ရေး ဦးစီးဌာန
+</div>
+</div>
+</nav>
