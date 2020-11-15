@@ -1,4 +1,11 @@
 <style>
+@font-face {
+    font-family: 'login';
+    src: url([[font:theme|login.ttf]]);
+    src: url([[font:theme|login.ttf]]) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 div.usermenu a[data-title^="profile"],
 div.usermenu a[data-title^="mymoodle"],
 #nav-drawer a[data-key="myhome"], 
@@ -31,6 +38,8 @@ div.usermenu .dropdown-divider
 .navbar-brand .site-name {
 	color: #fff;
     	font-weight: 600;
+        font-family: login;
+        
 }
 .site-second-name {
 	color: white;
@@ -83,6 +92,10 @@ nav {
 .nav-setting .coursecontrols {
     
 }
+#left {
+    padding: 0;
+    padding-left: 4px!important;
+}
 }
 
 @media only screen and (min-width:582px) and (max-width:599px) {
@@ -93,11 +106,16 @@ nav {
 .nav-setting .coursecontrols {
     
 }
+#left {
+    padding: 0;
+    padding-left: 4px!important;
+}
 }
 @media only screen and (min-width:567px) and (max-width:581px) {
 
 #left {
-    padding-left: 1px!important;
+    padding: 0;
+    padding-left: 3px!important;
 }
 }
 
@@ -199,6 +217,7 @@ nav {
 #left {
     flex: 0 0 40%;
     max-width: 40%;
+    padding: 0;
 }
 #middle, #right {
     flex: 0 0 30%;
@@ -217,6 +236,7 @@ nav {
 #left {
     flex: 0 0 40%;
     max-width: 40%;
+    padding: 0;
 }
 #middle, #right {
     flex: 0 0 30%;
@@ -235,7 +255,8 @@ nav {
 #left {
     flex: 0 0 40%;
     max-width: 40%;
-    padding-left: 2px!important;
+    padding: 0;
+    padding-left: 2px;
 }
 #middle, #right {
     flex: 0 0 30%;
@@ -270,6 +291,7 @@ nav {
 #left {
     flex: 0 0 40%;
     max-width: 40%;
+    padding: 0;
     padding-left: 2px!important;
 }
 #middle, #right {
@@ -289,6 +311,7 @@ nav {
 #left {
     flex: 0 0 40%;
     max-width: 40%;
+    padding: 0;
     padding-left: 2px!important;
 }
 #middle, #right {
@@ -308,6 +331,7 @@ nav {
 #left {
     flex: 0 0 40%;
     max-width: 40%;
+    padding: 0;
     padding-left: 2px!important;
 }
 #middle, #right {
@@ -420,14 +444,24 @@ nav {
 }
 }
 
-@media only screen and (min-width:334px) and (max-width:404px) {
+@media only screen and (min-width:380px) and (max-width:404px) {
     #middle .site-name {
     position: absolute;
     left: 50%;
-    -webkit-transform: translateX(50px);
+    -webkit-transform: translateX(36px);
     -moz-transform: translateX(36px);
     -o-transform: translateX(36px);
     -ms-transform: translateX(36px);
+}
+}
+@media only screen and (min-width:334px) and (max-width:379px) {
+    #middle .site-name {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(10px);
+    -moz-transform: translateX(10px);
+    -o-transform: translateX(10px);
+    -ms-transform: translateX(10px);
 }
 }
 @media only screen and (min-width:280px) and (max-width:333px) {
